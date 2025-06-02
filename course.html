@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SGM Coaching Classes</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/soft.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-three-dots" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <button onclick="toggleTheme()" id="themeToggleBtn" title="Toggle dark mode">🌓</button>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Aim For 2025</h1>
+    </section>
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="Images/certificate.jpg" alt="">
+            <h2>Our Aim and Plans for the upcoming year</h2>
+            <p>When I started this institute, my vision was clear — to create a place where education is not just about marks and ranks, but about building a strong foundation, nurturing curiosity, and guiding students toward their true potential.</p>
+            <br>
+            <p>Having worked closely with students for several years, I’ve seen firsthand how the right mentorship, consistent effort, and a positive learning environment can completely transform a student’s journey. At SGM, we are not just teachers — we are mentors, motivators, and partners in every student’s success story.
+
+Whether it's preparing for competitive exams like IIT-JEE and NEET, strengthening concepts through foundation courses, or excelling in board exams, our focus is always on quality teaching, personal attention, and holistic growth.</p>
+            <br>
+            <p>We believe that every student is capable of greatness—they just need the right guidance, support, and encouragement. That’s what we strive to provide at SGM Coaching Center every single day.
+
+Thank you for trusting us with your child’s education. We promise to give our best — so that they can become their best.</p>
+
+
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment">
+                    </textarea>
+                    <button type="submit" class="hero-btn blk-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Available Courses</h3>
+            <div>
+                <span>IIT-JEE</span>
+                <span>60000/-</span>
+            </div>
+            <div>
+                <span>NEET</span>
+                <span>60000/-</span>
+            </div>
+            <div>
+                <span>FOUNDATION</span>
+                <span>60000/-</span>
+            </div>
+            <div>
+                <span>DROPPERS</span>
+                <span>60000/-</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="footer">
+    <h4>Who are we?</h4>
+    <p>I am Vasant Gade, the founder and lead educator at SGM Coaching Center, a place where academic success meets personalized guidance. <br> With a deep passion for teaching and over 15 years of dedication to student success, I established SGM Coaching Center to provide high-quality, affordable education for students from all backgrounds.</p>
+    <div class="icon">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-instagram"></i>
+
+    </div>
+    <p>Made with ❤️ by Ishant Gour</p>
+ </section>
+
+
+<script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        // JavaScript for theme toggle
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+
+
+</body>
+</html>

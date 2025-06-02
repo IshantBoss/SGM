@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SGM Coaching Classes</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="Images/soft.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-three-dots" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <button onclick="toggleTheme()" id="themeToggleBtn" title="Toggle dark mode">🌓</button>
+            <i class="bi bi-list" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+
+<section class="location">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3716.991214521938!2d76.2065355743794!3d21.31136347801399!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd833a26a9edd83%3A0x1bf9d6afc0b4b629!2sSGM%20COACHING!5e0!3m2!1sen!2sin!4v1748885498228!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+            <i class="bi bi-house"></i>
+            <span>
+                <h5>8665+GJX, New Indira Colony, </h5>
+                <p>Burhanpur, Madhya Pradesh </p>
+            </span>
+        </div>
+          <div>
+            <i class="bi bi-phone"></i>
+            <span>
+                <h5>+91 1234567890 </h5>
+                <p>24/7 8AM To 8PM</p>
+            </span>
+        </div>
+        <div>
+            <i class="bi bi-envelope"></i>
+            <span>
+                <h5>info@SGMCoaching.com</h5>
+                <p>Email us your query</p>
+            </span>
+            </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php"method="post">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn blk-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+        
+
+</section>
+
+
+<section class="footer">
+    <h4>Who are we?</h4>
+    <p>I am Vasant Gade, the founder and lead educator at SGM Coaching Center, a place where academic success meets personalized guidance. <br> With a deep passion for teaching and over 15 years of dedication to student success, I established SGM Coaching Center to provide high-quality, affordable education for students from all backgrounds.</p>
+    <div class="icon">
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-instagram"></i>
+
+    </div>
+    <p>Made with ❤️ by Ishant Gour</p>
+ </section>
+
+
+<script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+        // JavaScript for theme toggle
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+
+
+</body>
+</html>
