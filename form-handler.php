@@ -5,7 +5,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 
-$email_form = 'infro@myweb.com'; // This should ideally be a valid email address associated with your domain for better deliverability.
+$email_form = 'lwastakendiscord@gmail.com'; // This should ideally be a valid email address associated with your domain for better deliverability.
 
 $email_subject = 'New Form Submission';
 
